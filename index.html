@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Single Price Grid Component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-size: 16px;
+    }
+
+    body{
+      display: flex;
+      min-height: 100vh;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Karla',sans-serif;
+      background-color: hsl(206, 47%, 93%);
+    }
+
+    main{
+      height: 400px;
+      width: 550px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 180px 220px;
+      box-shadow: 5px 5px 15px 6px rgba(42, 77, 100, 0.112);
+
+    }
+
+    .info{
+      grid-column: span 2;
+      background-color: white;
+      padding: 1rem;
+      padding-left: 30px;
+      color: hsl(218, 22%, 67%);
+      border-radius: 5px 5px 0 0;
+;   
+    }
+
+    h1{
+      color: hsl(176, 44%, 55%);
+      margin-top: 10px;
+      font-size: 18px;
+      margin-bottom: 20px;
+      font-weight: bolder;
+    }
+
+    h2{
+      color: hsl(71, 73%, 54%);
+      margin-bottom: 15px;
+    }
+
+    .info > p {
+      font-size: 14px;
+      width: 93%;
+      line-height: 20px;
+    }
+
+    .price{
+      background-color: hsl(179, 62%, 43%);
+      border-radius: 0 0 0 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-evenly;
+      padding-left: 2rem;
+    }
+
+    h3,span{
+      color: white;
+    }
+
+    span{
+      font-size: 26px;
+      font-weight: bolder;
+    }
+
+    em{
+      color:  hsl(181, 57%, 66%);
+      font-style: normal;
+    }
+
+    .price p{
+      color: hsl(185, 83%, 79%);
+      font-size: 14px;
+    }
+
+    button{
+      background-color:  hsl(71, 73%, 54%);
+      border: none;
+      color: white;
+      width: 90%;
+      padding: 1rem;
+      border-radius: 5px;
+      font-size: 12px;
+    }
+
+    .us{
+      background-color: hsl(179, 47%, 52%);
+      border-radius: 0 0 5px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      padding-left: 2rem;
+    }
+    
+    h4{
+      color: white;
+   
+    }
+
+    .us > ul {
+      color: hsl(206, 47%, 93%);
+      list-style: none;
+      
+    }
+
+    li{
+      font-size: 12px;
+      line-height: 18px;
+    }
+    @media only screen and (max-width: 600px){
+      main{
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+      }
+      .info > p{
+        line-height: 30px;
+      }
+      .price{
+        padding: 2rem;
+        gap: 1rem;
+        border-radius: 0;
+      }
+      .us{
+        padding: 2rem;
+        border-radius: 0 0 5px 5px;
+      }
+      ul{
+        margin-top: 1rem;
+      }
+      li{
+        
+        line-height: 20px;
+      }
+
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="info">
+    <h1>Join our community</h1>
+
+    <h2>30-day, hassle-free money back guarantee</h2>
+  
+    <p>Gain access to our full library of tutorials along with expert code reviews. 
+      Perfect for any developers who are serious about honing their skills.
+    </p>
+    </div>
+    <div class="price">
+          
+    <h3>Monthly Subscription</h3>
+  
+    <span>$29 <em>per month</em></span>
+  
+    <p>Full access for less than $1 a day</p>
+  
+    <button>Sign Up</button>
+    </div>
+    <div class="us">
+      <h4>Why Us</h4>
+  
+    <ul>
+      <li>Tutorials bt industry experts</li>
+      <li>Peer & expert code review</li>
+      <li>Coding exercises</li>
+      <li>Access to our GitHub repos</li>
+      <li>Community forum</li>
+      <li>Flashcard decks</li>
+      <li>New videos every week</li>
+    </ul>
+    
+    </div>
+
+  
+    
+    
+  </main>
+ 
+
+</body>
+</html>
